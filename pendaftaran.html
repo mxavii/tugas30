@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pendaftaran</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <div class="form-style-10">
+        <h1> Form Pendaftaran Mahasiswa Baru<br><span> Tahun ajaran 2017/2018 </span></h1>
+        <form action="pendaftar.php" method="POST">
+            <div class="section"><span>1</span>Data calon mahasiswa</div>
+            <div class="inner-wrap">
+                <label>Nama Lengkap : <input type="text" name="nama" /></label>
+                <label>Tempat & Tanggal Lahir : <input type="text" name="tmp_lahir" /><input type="date" name="tgl_lahir" /></label>
+        				<label>Jenis Kelamin :
+        				<select name="gender">
+        					<option value="Laki-laki"> Laki-Laki</option>
+        					<option value="Perempuan"> Perempuan</option>
+        				</select></label>
+                <label>Agama : <input type="text" name="agama" /></label>
+                <label>Alamat :<textarea name="alamat"></textarea></label>
+                <label>Alamat Email <input type="email" name="email" /></label>
+                <label>Nomor Telepon <input type="number" name="telp" /></label>
+            </div>
+            <div class="section"><span>2</span>Pilihan Prodi & Password</div>
+                <div class="inner-wrap">
+                <label>NISN <input type="number" name="nisn" /></label>
+                <label>Password <input type="password" name="pass" /></label>
+                <label>Konfirmasi Password <input type="password" name="pass2" /></label>
+                <label>Program Studi</label>
+                  <select name="prodi">
+                    <option value="Rekayasa Pertanian">Rekayasa Pertanian</option>
+                    <option value="Oseanografi">Oseanografi</option>
+                    <option value="Astronomi">Astronomi</option>
+                  </select>
+                <span class="privacy-policy">
+                <input type="checkbox" name="field7" />Saya telah mengisi data dengan sebenar-benarnya.
+                </span>
+            </div>
+            <div class="button-section">
+             <input type="submit" name="daftar" />
+            </div>
+        </form>
+      </div>
+  </body>
+</html>
